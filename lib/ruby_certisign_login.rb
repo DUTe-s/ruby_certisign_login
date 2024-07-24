@@ -27,7 +27,7 @@ module RubyCertisignLogin
     end
 
     def self.valid_key?
-      unless File.exists? CERTISIGN_KEYPATH
+      unless File.exist? CERTISIGN_KEYPATH
         raise "Adicione sua chave em #{CERTISIGN_KEYPATH}"
       end
     end
